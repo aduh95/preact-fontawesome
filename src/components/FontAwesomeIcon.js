@@ -2,7 +2,7 @@ import convert from '../converter'
 import { icon, parse } from '@fortawesome/fontawesome-svg-core'
 import log from '../logger'
 import PropTypes from 'prop-types'
-import React from 'react'
+import { h } from 'preact'
 
 function objectWithKey(key, value) {
   return (Array.isArray(value) && value.length > 0) ||
@@ -167,4 +167,4 @@ FontAwesomeIcon.defaultProps = {
   transform: null
 }
 
-const convertCurry = convert.bind(null, React.createElement)
+const convertCurry = convert.bind(null, h)

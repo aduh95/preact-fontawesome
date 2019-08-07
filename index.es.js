@@ -1,6 +1,5 @@
 import { parse, icon } from '@fortawesome/fontawesome-svg-core';
 import PropTypes from 'prop-types';
-import React from 'react';
 
 function _typeof(obj) {
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -321,6 +320,8 @@ function log () {
   }
 }
 
+var n,l,u,i;function e(n,l){for(var u in l)n[u]=l[u];return n}function s(n,l,u){var t,i,r,f,o=arguments;if(l=e({},l),arguments.length>3)for(u=[u],t=3;t<arguments.length;t++)u.push(o[t]);if(null!=u&&(l.children=u),null!=n&&null!=n.defaultProps)for(i in n.defaultProps)void 0===l[i]&&(l[i]=n.defaultProps[i]);return f=l.key,null!=(r=l.ref)&&delete l.ref,null!=f&&delete l.key,a(n,l,f,r)}function a(l,u,t,i){var r={type:l,props:u,key:t,ref:i,__k:null,__p:null,__b:0,__e:null,l:null,__c:null,constructor:void 0};return n.vnode&&n.vnode(r),r}function w(t){!t.__d&&(t.__d=!0)&&1===l.push(t)&&(n.debounceRendering||u)(g);}function g(){var n;for(l.sort(function(n,l){return l.__v.__b-n.__v.__b});n=l.pop();)n.__d&&n.forceUpdate(!1);}n={},l=[],u="function"==typeof Promise?Promise.prototype.then.bind(Promise.resolve()):setTimeout,n.__e=function(n,l,u){for(var t;l=l.__p;)if((t=l.__c)&&!t.__p)try{if(t.constructor&&null!=t.constructor.getDerivedStateFromError)t.setState(t.constructor.getDerivedStateFromError(n));else{if(null==t.componentDidCatch)continue;t.componentDidCatch(n);}return w(t.__E=t)}catch(l){n=l;}throw n},i=0;
+
 function objectWithKey(key, value) {
   return Array.isArray(value) && value.length > 0 || !Array.isArray(value) && value ? _defineProperty({}, key, value) : {};
 }
@@ -435,6 +436,6 @@ FontAwesomeIcon.defaultProps = {
   title: '',
   transform: null
 };
-var convertCurry = convert.bind(null, React.createElement);
+var convertCurry = convert.bind(null, s);
 
 export { FontAwesomeIcon };
