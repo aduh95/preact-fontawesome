@@ -1,4 +1,4 @@
-import humps from 'humps'
+import * as humps from './humps'
 
 function capitalize(val) {
   return val.charAt(0).toUpperCase() + val.slice(1)
